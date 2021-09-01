@@ -77,7 +77,7 @@ def process_image(image_path, console, gruvbox_factory):
 def add_gruvbox_palette(gruvbox_factory):
     current_path = Path(__file__).parent.absolute()
 
-    with open(str(current_path) + '/gruvbox.txt', 'r') as f:
+    with open(str(current_path) + '/moonfly.txt', 'r') as f:
         for line in f.readlines():
             gruvbox_factory.add_color_to_palette(line[:-1])
 
